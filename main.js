@@ -9,6 +9,9 @@ const downButton = document.getElementById("count_down");
 inputElement.addEventListener("input", () => {
   // inputの値を、pタグの中身に代入する
   textElement.textContent = inputElement.value;
+  if (textElement.textContent === "") {
+    textElement.textContent = "最初の文字";
+  }
 });
 
 // 現在の数値を管理する変数
