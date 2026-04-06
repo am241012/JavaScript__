@@ -8,9 +8,10 @@ const downButton = document.getElementById("count_down");
 // 入力イベント（文字が打たれた時）を監視する
 inputElement.addEventListener("input", () => {
   // inputの値を、pタグの中身に代入する
-  textElement.textContent = inputElement.value;
-  if (textElement.textContent === "") {
+  if (inputElement.value === "") {
     textElement.textContent = "最初の文字";
+  } else {
+    textElement.textContent = inputElement.value;
   }
 });
 
