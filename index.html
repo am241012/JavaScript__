@@ -13,8 +13,44 @@
     />
 
     <!-- Tailwind CSS + daisyUI CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <script src="main.js" defer></script>
+    <style>
+      #mybox {
+        border: 2px solid #333; /* 2pxの太さの、実線の、濃いグレーの枠 */
+        padding: 20px; /* 箱の内側に余白を作る */
+        margin-top: 10px;
+        width: 300px; /* 箱の横幅を決める */
+        background-color: #f9f9f9; /* 箱の背景色を薄いグレーにする */
+        border-radius: 5px; /* 角を少し丸くする */
+      }
+      #counter {
+        display: flex;
+      }
+      #mybox2 {
+        border: 2px solid #333; /* 2pxの太さの、実線の、濃いグレーの枠 */
+        padding: 20px; /* 箱の内側に余白を作る */
+        margin-bottom: 10px;
+        width: 300px; /* 箱の横幅を決める */
+        background-color: #ffffff; /* 箱の背景色を薄いグレーにする */
+        border-radius: 5px; /* 角を少し丸くする */
+      }
+    </style>
   </head>
-  <body class="m-6 w-1/2"></body>
+  <body class="m-6 w-1/2">
+    <h1>JS学習用</h1>
+    <div id="mybox">
+      <p id="output">最初の文字</p>
+      <input type="password" id="databox" placeholder="例：田中太郎" />
+    </div>
+    <div id="mybox2">
+      <div id="counter">
+        <p>回数:</p>
+        <p id="count">0</p>
+        <p>回</p>
+      </div>
+      <button id="countup">カウントアップ</button>
+      <button id="countdown">カウントダウン</button>
+    </div>
+  </body>
 </html>
