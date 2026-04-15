@@ -1,39 +1,10 @@
-// 操作したい要素を取得する
-const inputElement = document.getElementById("input");
-const textElement = document.querySelector("#default_text p");
-const countArea = document.getElementById("count_area");
-const upButton = document.getElementById("count_up");
-const downButton = document.getElementById("count_down");
+// DOM操作でHTMLからidを取得する
 
-// 入力イベント（文字が打たれた時）を監視する
-inputElement.addEventListener("input", () => {
-  // inputの値を、pタグの中身に代入する
-  if (inputElement.value === "") {
-    textElement.textContent = "最初の文字";
-  } else {
-    textElement.textContent = inputElement.value;
-  }
-});
+// inputされたことを認識させる
+//   > その中に置き換えたいやつにinputの中身を渡す関数を用意する
+//   > inputの中身が空なことを認識させる
+//   > 空な時に表示させたい文字を入れる
 
-// 現在の数値を管理する変数
-let count = 0;
-
-// カウントアップの処理
-upButton.addEventListener("click", () => {
-  count++; // 数値を1増やす
-  updateDisplay();
-});
-
-// カウントダウンの処理
-downButton.addEventListener("click", () => {
-  // 0より大きい時だけ減らす（0未満にしない）
-  if (count > 0) {
-    count--;
-    updateDisplay();
-  }
-});
-
-// 画面の表示を更新する関数
-function updateDisplay() {
-  countArea.textContent = count + "回";
-}
+// clickされたことを認識させる
+//   > カウントを定義する
+//   > カウントアップさせる関数とカウントダウンさせる関数を用意する
