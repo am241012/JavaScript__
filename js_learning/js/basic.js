@@ -1,9 +1,9 @@
 // DOM操作でHTMLからidを取得する
-const input = document.getElementById("databox");
+const inputarea = document.getElementById("databox");
 const output = document.getElementById("output");
 
 // inputされたことを認識させる
-(input, addEventListener("input", handleChange));
+(inputarea, addEventListener("input", handleChange));
 //   > その中に置き換えたいやつにinputの中身を渡す関数を用意する
 function handleChange(event) {
   const value = event.target.value;

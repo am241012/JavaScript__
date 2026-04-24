@@ -1,1 +1,34 @@
 <!-- HTMLも自分で書いてね -->
+<!doctype html>
+<html lang="JP">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>id to pass</title>
+    <script src="/JavaScript__/js_learning/js/if_01.js" defer></script>
+    <style>
+      .nyuryokuran {
+        border: 2px solid #333; /* 2pxの太さの、実線の、濃いグレーの枠 */
+        padding: 20px; /* 箱の内側に余白を作る */
+        margin-top: 10px;
+        width: 300px; /* 箱の横幅を決める */
+        background-color: #fff; /* 箱の背景色を薄いグレーにする */
+        border-radius: 5px; /* 角を少し丸くする */
+      }
+      .error {
+        font-size: 15px;
+        color: rgb(255, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nyuryokuran">
+      <p class="id">ID</p>
+      <input type="email" id="idnotoko" size="30" />
+      <p class="error" id="errormassege_id"></p>
+      <p class="pass">Password</p>
+      <input type="input" id="passnotoko" size="30" />
+      <p class="error" id="errormessage_pass"></p>
+    </div>
+  </body>
+</html>
