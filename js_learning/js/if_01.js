@@ -1,5 +1,5 @@
 // emailとpasswordの入力バリデーションチェックのフォーム作成課題
-// 期限 4/23
+// 期限 5/20
 // branch名: feature/form
 
 // email: kababrawp@kabab.com
