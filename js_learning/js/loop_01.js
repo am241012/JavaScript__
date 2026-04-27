@@ -1,5 +1,5 @@
 // FizzBuzz課題
-// 期限: 5/7
+// 期限: 6/3
 // branch名: feature/fizzbuzz
 
 // consoleログに以下の条件でFizz or Buzzを出力してください
